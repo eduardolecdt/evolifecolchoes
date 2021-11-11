@@ -7,8 +7,21 @@
   --cor-branco: #FFFFFF;
   --cor-preto: #000000;
 
+  --cor-amarelo: #E9FF43;
+
+  --cor-verde-escuro: #719200;
+  --cor-verde-claro: #B3CA00;
+
+  --cor-azul-escuro: #01315C;
+  --cor-azul-claro: #185A8E;
+
+  --cor-vermelho-escuro: #FF002B;
+  --cor-vermelho-claro: #FFEDF0;
+
   /* Fontes */
 
-  --fonte: '';
+  --black: 'americanCaptain';
+  --bold: 'markProBold';
+  --regular: 'markProRegular';
 
 }

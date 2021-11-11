@@ -6,5 +6,21 @@
 
 @import './partials/nav.css';
 @import './partials/header.css';
-@import './partials/sectionNome.css';
+@import './partials/section-americana.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-aviso.css';
+@import './partials/section-beneficios.css';
+@import './partials/section-brinde.css';
+@import './partials/section-caracteristicas.css';
+@import './partials/section-comprar.css';
+@import './partials/section-facilidades.css';
+@import './partials/section-frase.css';
+@import './partials/section-garantia.css';
+@import './partials/section-pastilhas.css';
+@import './partials/section-perguntas.css';
+@import './partials/section-resistente.css';
+@import './partials/section-sintomas.css';
+@import './partials/section-sobre.css';
+@import './partials/section-tipos.css';
+@import './partials/section-whatsapp.css';
 @import './partials/footer.css';

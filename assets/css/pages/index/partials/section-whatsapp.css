@@ -1,0 +1,10 @@
+/* index <section class="whatsapp"> */
+
+section.whatsapp {
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+}

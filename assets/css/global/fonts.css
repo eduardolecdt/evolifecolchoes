@@ -1,9 +1,25 @@
 /* Fontes */
 
 @font-face {
-  font-family: '';
+  font-family: 'americanCaptain';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('');
+  src: url('../../../files/fonts/american-captain.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'markProBold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../files/fonts/mark-pro-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'markProRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../files/fonts/mark-pro.woff') format('woff');
 }
