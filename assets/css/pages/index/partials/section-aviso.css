@@ -1,10 +1,39 @@
 /* index <section class="aviso"> */
-
 section.aviso {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--cor-vermelho-claro);
+  padding: 80px 20px;
 }
-
+section.aviso h2 {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-vermelho-escuro);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+section.aviso p {
+  font-family: var(--regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-vermelho-escuro);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 550px;
+  margin: 20px 0 0 0;
+}
+section.aviso p span {
+  font-family: var(--bold);
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.aviso {
+    padding: 50px 20px;
+  }
+  section.aviso h2 {
+    padding: 10px 15px;
+  }
 }

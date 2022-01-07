@@ -1,10 +1,100 @@
 /* index <section class="facilidades"> */
-
 section.facilidades {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  position: relative;
+  width: 100%;
 }
-
+/* Background */
+section.facilidades .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../../files/images/index/background-linhas-verde.png');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+/* h2 */
+section.facilidades h2 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-azul-escuro);
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 0 40px 0;
+  z-index: 2;
+}
+section.facilidades h2 span {
+  color: var(--cor-verde-claro);
+}
+/* Conteudo */
+section.facilidades .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+section.facilidades .conteudo .item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--cor-verde-claro);
+}
+section.facilidades .conteudo .item img {
+  width: 100px;
+  border-radius: 20px;
+}
+section.facilidades .conteudo .item h3 {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  transition: all 0.5s;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 0 20px 0;
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.facilidades {
+    padding: 50px 20px 30px 20px;
+  }
+  /* h2 */
+  section.facilidades h2 {
+    max-width: 300px;
+    margin: 0 0 20px 0;
+  }
+  /* Conteudo */
+  section.facilidades .conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 2;
+  }
+  section.facilidades .conteudo .item {
+    margin: 5px;
+    width: 40%;
+  }
+  section.facilidades .conteudo .item img {
+    width: 80px;
+    border-radius: 20px;
+  }
+  section.facilidades .conteudo .item h3 {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    margin: 0 0 15px 0;
+    width: 100%;
+    max-width: 100px;
+  }
 }

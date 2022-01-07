@@ -1,10 +1,76 @@
 /* index <section class="sobre"> */
-
 section.sobre {
-  display: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-
+/* Título */
+section.sobre .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 80px 50px 80px;
+  background: linear-gradient(to right, var(--cor-verde-claro), var(--cor-verde-escuro));
+  width: 60%;
+  min-height: 500px;
+}
+section.sobre .titulo h4 {
+  font-family: var(--regular);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  margin: 15px 0 10px 0;
+  width: 100%;
+  max-width: 350px;
+}
+section.sobre .titulo img {
+  width: 100%;
+  max-width: 200px;
+}
+section.sobre .titulo p {
+  font-family: var(--regular);
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 15px 0 0 0;
+}
+/* Imagem */
+section.sobre .imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px;
+  background-image: url('../../../../../files/images/index/familia-dormindo.png');
+  background-size: cover;
+  background-position: top center;
+  width: 40%;
+  position: relative;
+  min-height: 500px;
+}
+section.sobre .imagem img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.sobre {
+    flex-direction: column-reverse;
+  }
+  /* Título */
+  section.sobre .titulo {
+    padding: 40px 20px 40px 20px;
+    background: linear-gradient(to top, var(--cor-verde-claro), var(--cor-verde-escuro));
+    width: 100%;
+    min-height: auto;
+  }
+  /* Imagem */
+  section.sobre .imagem {
+    min-height: 200px;
+    width: 100%;
+  }
+  section.sobre .imagem img {
+    display: none;
+  }
 }

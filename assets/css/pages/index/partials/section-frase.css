@@ -1,10 +1,91 @@
 /* index <section class="frase"> */
-
 section.frase {
-  display: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 80px;
+  background: linear-gradient(to left, var(--cor-azul-escuro), var(--cor-azul-claro));
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-
+/* Imagem */
+section.frase img {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translate(0, -50%);
+  width: 100%;
+  max-width: 40%;
+  animation: zoomCama 30s linear infinite;
+}
+@keyframes zoomCama {
+  0% {
+    transform: translate(0, -50%) scale(1);
+  }
+  50% {
+    transform: translate(0, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(0, -50%) scale(1);
+  }
+}
+/* Título */
+section.frase .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+section.frase .titulo h2 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-branco);
+  line-height: 1;
+}
+section.frase .titulo h3 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-amarelo);
+  line-height: 1;
+}
+section.frase .titulo button {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde-claro);
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 15px 0 0 0;
+  transition: all 0.3s;
+}
+section.frase .titulo button:hover {
+  background-color: var(--cor-verde-escuro);
+  box-shadow: 0 0 30px 0 var(--cor-verde-claro);
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.frase {
+    padding: 250px 20px 40px 20px;
+  }
+  /* Imagem */
+  section.frase img {
+    top: -20px;
+    left: 20px;
+    transform: translate(0, 0);
+    width: 100%;
+    max-width: 300px;
+  }
+  @keyframes zoomCama {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(0, 0) scale(1.2);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
 }

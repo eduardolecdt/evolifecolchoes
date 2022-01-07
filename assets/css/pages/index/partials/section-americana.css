@@ -1,10 +1,71 @@
 /* index <section class="americana"> */
-
 section.americana {
-  display: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 80px;
+  overflow: hidden;
 }
-
+/* Background */
+section.americana .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../../files/images/index/background-linhas-verde.png');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+/* Título */
+section.americana .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+section.americana .titulo h2 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: var(--cor-azul-escuro);
+  line-height: 1.5;
+}
+section.americana .titulo p {
+  font-family: var(--regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-azul-escuro);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 650px;
+}
+/* IMG */
+section.americana img {
+  width: 100%;
+  max-width: 270px;
+  margin-left: auto;
+  z-index: 2;
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.americana {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 50px 20px;
+  }
+  /* Título */
+  section.americana .titulo {
+    margin: 20px 0 0 0;
+  }
+  section.americana .titulo h2 {
+    width: 100%;
+    max-width: 200px;
+    font-size: clamp(3rem, 3vw, 4rem);
+    line-height: 1;
+    margin: 0 0 15px 0;
+  }
+  /* IMG */
+  section.americana img {
+    max-width: 220px;
+    margin-left: 0;
+  }
 }

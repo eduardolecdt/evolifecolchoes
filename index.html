@@ -90,35 +90,35 @@
   <section class="beneficios">
     <div class="background"></div>
     <div class="conteudo">
-      <div class="item">
+      <div class="item um">
         <img src="./files/images/index/exemplo-suede.png">
         <h3>Acabamento suede</h3>
       </div>
-      <div class="item">
+      <div class="item dois">
         <img src="./files/images/index/exemplo-abnt.png">
         <h3>Padrões ABNT</h3>
       </div>
-      <div class="item">
+      <div class="item um">
         <img src="./files/images/index/exemplo-pillowtop.png">
         <h3>Pillow Top Magnético</h3>
       </div>
-      <div class="item">
+      <div class="item dois">
         <img src="./files/images/index/exemplo-perfilado.png">
         <h3>Perfilado High Tech (Rabatan)</h3>
       </div>
-      <div class="item">
+      <div class="item um">
         <img src="./files/images/index/exemplo-garantia.png">
         <h3>12 anos de Garantia</h3>
       </div>
-      <div class="item">
+      <div class="item dois">
         <img src="./files/images/index/exemplo-lua.png">
         <h3>Desafio 90 noites de satisfação</h3>
       </div>
-      <div class="item">
+      <div class="item um">
         <img src="./files/images/index/exemplo-coluna.png">
         <h3>Ortopédico</h3>
       </div>
-      <div class="item">
+      <div class="item dois">
         <img src="./files/images/index/exemplo-jacquard.png">
         <h3>Tecido Jacquard Matelado</h3>
       </div>
@@ -127,7 +127,7 @@
 
   <!-- Section -->
   <section class="frase">
-    <img class="imagem" src="./files/images/index/colchao-branco.png">
+    <img src="./files/images/index/colchao-branco.png">
     <div class="titulo">
       <h2>OFERTAS ESPECIAIS</h2>
       <h3>+BRINDES EXCLUSIVOS</h3>
@@ -139,7 +139,7 @@
   <section class="sintomas">
     <div class="background"></div>
     <h2>Recomendado para <span>pessoas que apresentam</span> os seguintes sintomas</h2>
-    <div class="itens">
+    <div class="conteudo">
       <div class="item">
         <img src="./files/images/index/recomendo-hernia.png">
         <p>hérnia de disco</p>
@@ -190,13 +190,14 @@
       <h2>TECNOLOGIA AMERICANA</h2>
       <p>Redução do ácido lático, estimula a produção de vitamina D no organismo, ajuda a combater a retenção de líquidos causadores de celulite, evita a fadiga e o cansaço muscular, ajuda no processo de renovação celular evitando o envelhecimento precoce.</p>
     </div>
-    <img class="imagem" src="./files/images/index/bandeira-estados-unidos.svg">
+    <img src="./files/images/index/bandeira-estados-unidos.svg">
   </section>
 
   <!-- Section -->
   <section class="aviso">
     <h2>AVISO IMPORTANTE</h2>
-    <p>Usuários de marca-passo ou em tratamento de hemodiálise favor nos avisar para que sejam retiradas as pastilhas de infravermelho e magnéticas.</p>
+    <p>Usuários de <span>marca-passo ou em tratamento de hemodiálise</span> favor nos avisar para que sejam <span>retiradas as pastilhas de infravermelho e magnéticas.</span>
+    </p>
   </section>
 
   <!-- Section -->
@@ -226,7 +227,7 @@
   <!-- Section -->
   <section class="caracteristicas">
     <h2>Características <span>importantes:</span></h2>
-    <div class="itens">
+    <div class="conteudo">
       <div class="item">
         <img src="./files/images/index/icone-quantico-verde.svg">
         <p>Bioquântico</p>
@@ -253,7 +254,7 @@
   <!-- Section -->
   <section class="garantia">
     <div class="background"></div>
-    <img class="imagem" src="./files/images/index/selo-garantia.svg">
+    <img class="selo" src="./files/images/index/selo-garantia.svg">
     <div class="titulo">
       <h2>12 ANOS DE GARANTIA</h2>
       <p>uma incrível garantia de 12 anos que conta com assistência técnica permanente em nossa própria fábrica!</p>
@@ -276,7 +277,7 @@
   <section class="facilidades">
     <div class="background"></div>
     <h2>Veja as facilidades para comprar o seu colchão magnético evolife</h2>
-    <div class="itens">
+    <div class="conteudo">
       <div class="item">
         <h3>Pagamento em até 12x sem juros</h3>
         <img src="./files/images/index/icone-cartao-azul.svg">
@@ -305,7 +306,7 @@
           <p>Colchão</p>
           <h3>SOLTEIRO</h3>
         </button>
-        <button type="button">
+        <button type="button" class="ativo">
           <p>Colchão</p>
           <h3>CASAL</h3>
         </button>
@@ -328,12 +329,13 @@
         <p>32cm de altura</p>
         <h3>Cor</h3>
         <div class="cores">
-          <button type="button" class="um"></button>
-          <button type="button" class="um"></button>
-          <button type="button" class="um"></button>
-          <button type="button" class="um"></button>
-          <button type="button" class="um"></button>
-          <button type="button" class="um"></button>
+          <button type="button" class="um ativo"></button>
+          <button type="button" class="dois"></button>
+          <button type="button" class="tres"></button>
+          <button type="button" class="quatro"></button>
+          <button type="button" class="cinco"></button>
+          <button type="button" class="seis"></button>
+          <button type="button" class="sete"></button>
         </div>
         <button class="principal">QUERO A OFERTA</button>
         <img class="metodos" src="./files/images/index/metodos-pagamentos.svg">
@@ -343,53 +345,49 @@
 
   <!-- Section -->
   <section class="perguntas">
-    <div class="titulo">
-      <h2>PERGUNTAS</h2>
-      <h3>FREQUENTES</h3>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
-      <div class="pergunta">
-        <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
-        <p>Aqui fica a resposta certinha do texto</p>
-      </div>
+    <h2>PERGUNTAS</h2>
+    <h3>FREQUENTES</h3>
+    <div class="pergunta">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
+    </div>
+    <div class="pergunta ativo">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
+    </div>
+    <div class="pergunta">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
+    </div>
+    <div class="pergunta">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
+    </div>
+    <div class="pergunta">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
+    </div>
+    <div class="pergunta">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
+    </div>
+    <div class="pergunta">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
+    </div>
+    <div class="pergunta">
+      <h4><img src="./files/images/index/icone-seta-azul.svg">Pra quem é indicado?</h4>
+      <p>Aqui fica a resposta certinha do texto</p>
     </div>
     <div class="imagem">
       <img class="onda" src="./files/images/index/onda-branco-1.svg">
-      <div class="background"></div>
     </div>
   </section>
 
   <!-- Section -->
   <section class="sobre">
     <div class="imagem">
-      <img class="onda" src="./files/images/index/onda-verde-1.svg">
-      <div class="background"></div>
+      <img src="./files/images/index/onda-verde-2.svg">
     </div>
     <div class="titulo">
       <img class="logo" src="./files/images/index/logo-evolife-grande.svg">
@@ -402,9 +400,10 @@
 
   <!-- Section -->
   <section class="whatsapp">
-    <img class="imagem" src="./files/images/index/whatsapp-3d.svg">
+    <div class="background"></div>
+    <img src="./files/images/index/whatsapp-3d.svg">
     <div class="titulo">
-      <h2>Ainda tem algumas dúvidas?</h2>
+      <h2>Tem perguntas a fazer?</h2>
       <p>Precisa de uma consultoria exclusiva para concluir a compra? Fale agora com nosso consultor através de nosso whatsapp</p>
       <button>FALAR PELO WHATSAPP</button>
     </div>

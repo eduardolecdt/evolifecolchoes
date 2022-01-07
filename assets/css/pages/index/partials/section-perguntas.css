@@ -1,10 +1,137 @@
 /* index <section class="perguntas"> */
-
 section.perguntas {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  padding: 80px;
 }
-
+section.perguntas h2 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-azul-escuro);
+  line-height: 1;
+  z-index: 2;
+}
+section.perguntas h3 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-verde-claro);
+  line-height: 1;
+  z-index: 2;
+}
+section.perguntas .pergunta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0 50px 0 0;
+}
+section.perguntas .pergunta h4 {
+  display: flex;
+  align-items: center;
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-azul-escuro);
+  pointer-events: none;
+}
+section.perguntas .pergunta h4 img {
+  width: 15px;
+  min-width: 15px;
+  margin: 0 10px 0 0;
+}
+section.perguntas .pergunta p {
+  font-family: var(--regular);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  color: var(--cor-azul-escuro);
+  line-height: 0;
+  padding: 0 0 0 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+section.perguntas .pergunta.ativo p {
+  padding: 5px 0 0 0;
+  line-height: 1.5;
+  opacity: 1;
+  visibility: visible;
+}
+/* Background */
+section.perguntas .imagem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url('../../../../../files/images/index/familia-dormindo-2.png');
+  background-size: cover;
+  background-position: top center;
+  z-index: 2;
+}
+section.perguntas .imagem img {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 100%;
+  z-index: 3;
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.perguntas {
+    padding: 50px 20px 250px 20px;
+  }
+  section.perguntas .pergunta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0 50px 0 0;
+  }
+  section.perguntas .pergunta h4 {
+    display: flex;
+    align-items: center;
+    font-family: var(--bold);
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    color: var(--cor-azul-escuro);
+    pointer-events: none;
+  }
+  section.perguntas .pergunta h4 img {
+    width: 15px;
+    min-width: 15px;
+    margin: 0 10px 0 0;
+  }
+  section.perguntas .pergunta p {
+    font-family: var(--regular);
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    color: var(--cor-azul-escuro);
+    line-height: 0;
+    padding: 0 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+  section.perguntas .pergunta.ativo p {
+    padding: 5px 0 0 0;
+    line-height: 1.5;
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Background */
+  section.perguntas .imagem {
+    top: auto;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+  }
+  section.perguntas .imagem img {
+    display: none;
+  }
 }

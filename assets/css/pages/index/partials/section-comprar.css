@@ -1,10 +1,210 @@
 /* index <section class="comprar"> */
-
 section.comprar {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, var(--cor-azul-escuro), var(--cor-azul-claro));
+  padding: 80px;
 }
-
+/* H2 */
+section.comprar h2 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-branco);
+  margin: 0 0 80px 0;
+  text-align: center;
+}
+/* Quadro */
+section.comprar .quadro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 50px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: var(--cor-branco);
+}
+/* Quadro botões */
+section.comprar .quadro .botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+}
+section.comprar .quadro .botoes button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-cinza);
+  border: 3px solid var(--cor-cinza);
+  color: var(--cor-azul-escuro);
+  padding: 20px 35px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 200px;
+  transition: all 0.3s;
+  margin: 0 10px;
+}
+section.comprar .quadro .botoes button.ativo {
+  background-color: var(--cor-verde-claro);
+  border: 3px solid var(--cor-verde-claro);
+  color: var(--cor-branco);
+}
+section.comprar .quadro .botoes button p {
+  font-family: var(--bold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  pointer-events: none;
+}
+section.comprar .quadro .botoes button h3 {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  pointer-events: none;
+}
+section.comprar .quadro .botoes button:hover {
+  border: 3px solid var(--cor-branco);
+  transform: scale(1.05);
+}
+/* Quadro imagem */
+section.comprar .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 30px 0 0 0;
+}
+section.comprar .imagem img {
+  width: 100%;
+}
+/* Quadro imagem */
+section.comprar .opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 0 0 0 50px;
+}
+section.comprar .opcoes h3 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-azul-escuro);
+  margin: 30px 0 0 0;
+}
+section.comprar .opcoes p {
+  font-family: var(--regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-azul-escuro);
+  margin: 10px 0 0 0;
+}
+section.comprar .opcoes img {
+  width: 100%;
+  max-width: 200px;
+}
+section.comprar .opcoes button.principal {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde-claro);
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 30px 0 15px 0;
+  transition: all 0.3s;
+}
+section.comprar .opcoes button.principal:hover {
+  background-color: var(--cor-verde-escuro);
+  box-shadow: 0 0 30px 0 var(--cor-verde-claro);
+}
+section.comprar .opcoes .cores {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+section.comprar .opcoes .cores button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+  transition: all 0.3s;
+}
+section.comprar .opcoes .cores button.ativo {
+  border: 10px double var(--cor-branco);
+}
+section.comprar .opcoes .cores button.um {
+  background-color: var(--cor-um);
+}
+section.comprar .opcoes .cores button.dois {
+  background-color: var(--cor-dois);
+}
+section.comprar .opcoes .cores button.tres {
+  background-color: var(--cor-tres);
+}
+section.comprar .opcoes .cores button.quatro {
+  background-color: var(--cor-quatro);
+}
+section.comprar .opcoes .cores button.cinco {
+  background-color: var(--cor-cinco);
+}
+section.comprar .opcoes .cores button.seis {
+  background-color: var(--cor-seis);
+}
+section.comprar .opcoes .cores button.sete {
+  background-color: var(--cor-sete);
+}
+section.comprar .opcoes .cores button:hover {
+  transform: scale(1.05);
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.comprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--cor-azul-escuro), var(--cor-azul-claro));
+    padding: 50px 20px 50px 20px;
+  }
+  /* H2 */
+  section.comprar h2 {
+    font-family: var(--black);
+    font-size: clamp(2rem, 3vw, 4rem);
+    color: var(--cor-branco);
+    margin: 0 0 220px 0;
+    text-align: center;
+  }
+  /* Quadro */
+  section.comprar .quadro {
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  /* Quadro botões */
+  section.comprar .quadro .botoes {
+    flex-wrap: wrap;
+    top: -200px;
+  }
+  section.comprar .quadro .botoes button {
+    padding: 20px 30px;
+    width: 40%;
+    max-width: 150px;
+    margin: 5px;
+  }
+  /* Quadro imagem */
+  section.comprar .imagem {
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+  /* Quadro imagem */
+  section.comprar .opcoes {
+    width: 100%;
+    padding: 0;
+  }
+  section.comprar .opcoes .cores button {
+    margin: 0 10px 0 0;
+  }
 }

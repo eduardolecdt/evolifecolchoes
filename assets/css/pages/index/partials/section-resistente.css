@@ -1,10 +1,75 @@
 /* index <section class="resistente"> */
-
 section.resistente {
-  display: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-
+/* Título */
+section.resistente .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 80px 50px 80px;
+  background: linear-gradient(to left, var(--cor-verde-claro), var(--cor-verde-escuro));
+  width: 50%;
+  min-height: 300px;
+}
+section.resistente .titulo h2 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-branco);
+  line-height: 1;
+}
+section.resistente .titulo h3 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-amarelo);
+  line-height: 1;
+}
+section.resistente .titulo p {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  margin: 15px 0 0 0;
+}
+/* Imagem */
+section.resistente .imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  background-image: url('../../../../../files/images/index/familia-dormindo.png');
+  background-size: cover;
+  background-position: top center;
+  width: 50%;
+  position: relative;
+  min-height: 300px;
+}
+section.resistente .imagem img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.resistente {
+    flex-direction: column;
+  }
+  /* Título */
+  section.resistente .titulo {
+    padding: 40px 20px 40px 20px;
+    background: linear-gradient(to bottom, var(--cor-verde-claro), var(--cor-verde-escuro));
+    width: 100%;
+    min-height: auto;
+  }
+  /* Imagem */
+  section.resistente .imagem {
+    min-height: 250px;
+    width: 100%;
+  }
+  section.resistente .imagem img {
+    display: none;
+  }
 }

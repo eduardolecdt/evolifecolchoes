@@ -1,10 +1,87 @@
 /* index <section class="apresentacao"> */
-
 section.apresentacao {
-  display: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-
+/* Título */
+section.apresentacao .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 130px 80px 50px 80px;
+  background: linear-gradient(to left, var(--cor-verde-claro), var(--cor-verde-escuro));
+  width: 50%;
+  min-height: 600px;
+}
+section.apresentacao .titulo h1 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-branco);
+  line-height: 1;
+}
+section.apresentacao .titulo h2 {
+  font-family: var(--black);
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--cor-amarelo);
+  line-height: 1;
+}
+section.apresentacao .titulo h3 {
+  font-family: var(--regular);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  margin: 20px 0;
+}
+section.apresentacao .titulo p {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-azul-escuro);
+  display: flex;
+  align-items: center;
+}
+section.apresentacao .titulo p img {
+  width: 30px;
+  min-width: 30px;
+  margin: 0 10px 0 0;
+}
+/* Imagem */
+section.apresentacao .imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  background-image: url('../../../../../files/images/index/casal-idoso-deitados.png');
+  background-size: cover;
+  background-position: top center;
+  width: 50%;
+  position: relative;
+  min-height: 600px;
+}
+section.apresentacao .imagem img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.apresentacao {
+    flex-direction: column;
+  }
+  /* Título */
+  section.apresentacao .titulo {
+    padding: 100px 20px 30px 20px;
+    background: linear-gradient(to top, var(--cor-verde-claro), var(--cor-verde-escuro));
+    width: 100%;
+    min-height: auto;
+  }
+  /* Imagem */
+  section.apresentacao .imagem {
+    min-height: 350px;
+    width: 100%;
+  }
+  section.apresentacao .imagem img {
+    display: none;
+  }
 }
